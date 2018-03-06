@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+# abstract class Person
 class Person(ABC):
 	@abstractmethod
 	def set_name(self, name, age, gendor):
@@ -10,14 +11,20 @@ class Person(ABC):
 	def print_person(self):
 		print(self.name, self.age, self.gendor)
 
+
+# class Parent: mother or father
 class Parent(Person):
 	def __init__(self, name, age, gendor):
 		set_name(name, age, gendor)
 
+
+# class Child
 class Child(Person):
 	def __init__(self, name, age, gendor):
                 set_name(name, age, gendor)
 
+
+# class Family: it need put name and age of mother and father 
 class Family(Person):
 	def __init__(self, name_m, name_f, age_m, age_f):
 		self.mother = Parent(name_m, age_m, 'f')

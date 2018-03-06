@@ -1,3 +1,4 @@
+# simple recurstion problem:)
 def num_sum(num, sum):
 	if num / 10 == 0:
 		print(sum + num % 10)

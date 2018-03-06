@@ -1,5 +1,6 @@
 import random
 arr = []
+# we generate ramdom array
 for i in range(7):
 	arr.append(2 * 2 * random.randint(-1000, 1000))
 for i in range(1, 7, 2):
