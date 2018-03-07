@@ -6,7 +6,7 @@ def sort(arr, order):
 		for j in range(len(arr) - i):
 			if arr[j] > arr[j + 1] and order or arr[j] < arr[j + 1] and not order:
 				arr[j + 1], arr[j] = arr[j], arr[j + 1]
-		it += (len(arr) - i + 1)
+				it += 1
 	return (arr, it)
 
 # input height and width of matrix
