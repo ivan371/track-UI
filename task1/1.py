@@ -1,5 +1,7 @@
+print("input size of array>")
 n = int(input())
 arr = []
+print("input array>")
 for i in range(n):
 	arr.append(int(input()))
 # we need only numbers whish divide by 6

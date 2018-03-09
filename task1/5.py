@@ -10,13 +10,16 @@ def sort(arr, order):
 	return (arr, it)
 
 # input height and width of matrix
+print("input height and width of matrix:")
 n = int(input())
 m = int(input())
 it = 0
 t_it = 0
 # input array elems after enter
+print("input matrix")
 arr = [[int(raw_input()) for i in xrange(n)] for j in xrange(m)]
+print("This is unsorted array: ", arr)
 for i in range(m):
 	(arr[i], t_it) = sort(arr[i], i % 2)
 	it += t_it
-print(arr, t_it)		
+print("This is sorted array and number of operations: ", arr, t_it)		
