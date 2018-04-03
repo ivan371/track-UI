@@ -27,12 +27,9 @@ public class Main {
 
 
         //Create map
-        Map<Integer, Integer> map = intStream.boxed().collect(Collectors.toMap(i -> i, multiNumber));
+        HashMap<Integer, Integer> map = new HashMap<>(intStream.boxed().collect(Collectors.toMap(i -> i, multiNumber)));
 
-
-        Map<Integer, Integer> totalMap = new HashMap<Integer, Integer>(map);
-
-        ArrayList<Integer> changedNumbers = new ArrayList<Integer>(totalMap.values());
+        ArrayList<Integer> changedNumbers = new ArrayList<Integer>(map.values());
 
         //Print numbers
         changedNumbers.stream().forEach(printNumber);
