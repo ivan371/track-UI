@@ -5,16 +5,25 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class Main {
+
+    private static <t> Predicate<t> condition() {
+        return x -> x.equals(x.toString());
+    }
+
+    private static <t, r> Function<t, r> ifTrue() {
+        return x -> (r) x.toString();
+    }
+
+    private static <t, r> Function<t, r> ifFalse() {
+        return x -> (r) x.getClass();
+    }
+
+    private static <t, r> Function<t, r> ternaryOperator(Predicate<t> condition, Function<t, r> ifTrue, Function<t, r> ifFalse) {
+        return x -> condition.test(x) ? ifTrue.apply(x) : ifFalse.apply(x);
+    }
+
     public static void main(String[] args) {
-        //example of predicate and function
-        Predicate<Integer> condition = x -> x % 2 == 0;
-        Function<Integer, Integer> ifTrue = x -> --x;
-        Function<Integer, Integer> ifFalse = x -> ++x;
-
-        //out ternary Operator
-        Function<Integer, Integer> ternaryOperator = x -> condition.test(x) ? ifTrue.apply(x) : ifFalse.apply(x);
-
-        System.out.println(ternaryOperator.apply(5));
-        System.out.println(ternaryOperator.apply(6));
+        System.out.println(ternaryOperator(condition(), ifTrue(), ifFalse()).apply(5));
+        System.out.println(ternaryOperator(condition(), ifTrue(), ifFalse()).apply("a"));
     }
 }
