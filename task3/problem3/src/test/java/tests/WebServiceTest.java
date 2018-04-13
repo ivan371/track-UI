@@ -1,6 +1,7 @@
 package tests;
 
 import org.junit.Test;
+import org.mockito.exceptions.misusing.WrongTypeOfReturnValue;
 import problem3.WebService;
 
 import static org.mockito.Mockito.*;
@@ -18,7 +19,7 @@ public class WebServiceTest {
         assertEquals("e-mail for id " + id, email, webService.getUserEmail(id));
     }
 
-    @Test
+    @Test(expected = AssertionError.class)
     public void testNegativeGetUserEmail() {
         WebService webService = mock(WebService.class);
         String email = "test@test.ru";
@@ -35,7 +36,7 @@ public class WebServiceTest {
         assertEquals("current url", url, webService.getCurrentUrl());
     }
 
-    @Test
+    @Test(expected = AssertionError.class)
     public void testNegativeGetCurrentUrl() {
         WebService webService = mock(WebService.class);
         String url = "https://mail.ru";
@@ -51,11 +52,11 @@ public class WebServiceTest {
         assertTrue("registered e-mail: " + email, webService.isRegisteredUser(email));
     }
 
-    @Test
+    @Test(expected = WrongTypeOfReturnValue.class)
     public void testNegativeIsRegisteredUser() {
         WebService webService = mock(WebService.class);
         String email = "test@test.ru";
-        when(webService.isRegisteredUser(email)).thenReturn(false);
+        when(webService.isRegisteredUser(email)).thenReturn(null);
         assertTrue("registered e-mail: " + email, webService.isRegisteredUser(email));
     }
 }

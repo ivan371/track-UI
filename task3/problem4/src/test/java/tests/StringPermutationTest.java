@@ -22,23 +22,13 @@ public class StringPermutationTest {
         testTemplate("__123 ", "123_ _");
     }
 
-    @Test
-
+    @Test(expected = NullPointerException.class)
     public void testNegativeOne() {
-        testTemplate("1", "2");
+        testTemplate(null, "2");
     }
 
-    @Test
+    @Test(expected = NullPointerException.class)
     public void testNegativeTwo() {
-        testTemplate("String1", "String2");
-    }
-
-    @Test
-    public void testException() {
-        try {
-            testTemplate(null, "string");
-        } catch(NullPointerException e) {
-            System.out.println("Null string");
-        }
+        testTemplate("String1", null);
     }
 }

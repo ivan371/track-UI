@@ -24,11 +24,11 @@ public class ThreeNumberCountTest {
 
     @Test
     public void testNegativeOne() {
-        testTemplate(new ThreeNumberCount(new int[]{}), 1);
+        testTemplate(new ThreeNumberCount(new int[]{}), 0);
     }
 
-    @Test
+    @Test(expected = NullPointerException.class)
     public void testNegativeTwo() {
-        testTemplate(new ThreeNumberCount(new int[]{300003, 33}), 5);
+        testTemplate(new ThreeNumberCount(null), 1);
     }
 }
