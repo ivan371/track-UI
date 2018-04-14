@@ -1,6 +1,7 @@
 package tests;
 
 import org.junit.Test;
+import org.mockito.exceptions.misusing.UnfinishedStubbingException;
 import org.mockito.exceptions.misusing.WrongTypeOfReturnValue;
 import problem3.WebService;
 
@@ -19,13 +20,13 @@ public class WebServiceTest {
         assertEquals("e-mail for id " + id, email, webService.getUserEmail(id));
     }
 
-    @Test(expected = AssertionError.class)
+    @Test(expected = ArrayIndexOutOfBoundsException.class)
     public void testNegativeGetUserEmail() {
         WebService webService = mock(WebService.class);
         String email = "test@test.ru";
-        int id = 1;
-        when(webService.getUserEmail(id)).thenReturn(null);
-        assertEquals("e-mail for id " + id, email, webService.getUserEmail(id));
+        int id[] = new int[]{};
+        when(webService.getUserEmail(id[1])).thenThrow(ArrayIndexOutOfBoundsException.class);
+        assertEquals("e-mail for id " + id, email, webService.getUserEmail(id[1]));
     }
 
     @Test
@@ -36,11 +37,11 @@ public class WebServiceTest {
         assertEquals("current url", url, webService.getCurrentUrl());
     }
 
-    @Test(expected = AssertionError.class)
+    @Test(expected = ArrayIndexOutOfBoundsException.class)
     public void testNegativeGetCurrentUrl() {
         WebService webService = mock(WebService.class);
-        String url = "https://mail.ru";
-        when(webService.getCurrentUrl()).thenReturn(null);
+        String[] url = new String[]{};
+        when(webService.getCurrentUrl()).thenThrow(ArrayIndexOutOfBoundsException.class);
         assertEquals("current url", url, webService.getCurrentUrl());
     }
 
@@ -52,11 +53,11 @@ public class WebServiceTest {
         assertTrue("registered e-mail: " + email, webService.isRegisteredUser(email));
     }
 
-    @Test(expected = WrongTypeOfReturnValue.class)
+    @Test(expected = ArrayIndexOutOfBoundsException.class)
     public void testNegativeIsRegisteredUser() {
         WebService webService = mock(WebService.class);
-        String email = "test@test.ru";
-        when(webService.isRegisteredUser(email)).thenReturn(null);
-        assertTrue("registered e-mail: " + email, webService.isRegisteredUser(email));
+        String[] email = new String[]{};
+        when(webService.isRegisteredUser(email[1])).thenThrow(ArrayIndexOutOfBoundsException.class);
+        assertTrue("registered e-mail: " + email, webService.isRegisteredUser(email[1]));
     }
 }
