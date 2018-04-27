@@ -20,6 +20,7 @@ public class DriverProvider {
         chromeOptions.addArguments("--ignore-certificate-errors");
 
         driver = new ChromeDriver(chromeOptions);
+        driver.manage().window().maximize();
     }
 
     /**

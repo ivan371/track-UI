@@ -3,16 +3,13 @@ package horo.data;
 public enum HoroData {
     January("январь"),
     February("февраль"),
-    March("Март"),
-    April("Апрель"),
-    May("Май"),
-    June("Июнь"),
-    July("Июль"),
-    August("Август"),
-    September("Сентябрь"),
-    October("Октябрь"),
-    November("Ноябрь"),
-    December("Декабрь");
+    March("март"),
+    April("апрель"),
+    May("май"),
+    June("июнь"),
+    July("июль"),
+    August("август")
+    ;
 
     private final String name;
 
@@ -20,8 +17,14 @@ public enum HoroData {
         this.name = name;
     }
 
+    // make first letter in upper case
+    private String firstUpperCase(String word){
+        if(word == null || word.isEmpty()) return "";
+        return word.substring(0, 1).toUpperCase() + word.substring(1);
+    }
+
     public String getName() {
-        return name;
+        return firstUpperCase(name);
     }
 
     public String getNameWithYear(String year) {

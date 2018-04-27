@@ -32,7 +32,7 @@ public class HoroLinkMonthElement extends ComponentObject {
     }
 
     public void clickFilterTab(HoroData horoData) {
-        String locator = String.format(horoLinksFilterTabLocator, horoData.getName());
+        String locator = String.format(horoLinksFilterTabLocator, horoData.getNameWithYear(year));
         getDriver().findElement(By.xpath(locator)).click();
     }
 }

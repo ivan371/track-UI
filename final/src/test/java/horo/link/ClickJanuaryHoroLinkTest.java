@@ -11,6 +11,7 @@ import org.junit.Before;
 import org.junit.Test;
 import source.driver.DriverProvider;
 
+import java.util.Arrays;
 import java.util.List;
 
 @DisplayName("Проверяем клил по ссылке январь /moon_calendar проекта \"horo\"")
@@ -35,7 +36,19 @@ public class ClickJanuaryHoroLinkTest {
 
         List<String> titles = horoLinkSteps.getAllHoroItemTitles();
 
+        // link january should be active
         HoroLinkStepsElementSteps horoLinkStepsElementSteps = new HoroLinkStepsElementSteps(driverProvider.getDriver());
         horoLinkStepsElementSteps.filterTabShouldBeActive(HoroData.January);
+
+        // after click link february should be active
+        horoLinkStepsElementSteps.clickFilterTab(HoroData.February);
+        horoLinkStepsElementSteps.filterTabShouldBeActive(HoroData.February);
+
+        // other links shouldn't be active
+        Arrays.stream(HoroData.values())
+                .filter(horo -> horo != HoroData.February)
+                .forEach(horoLinkStepsElementSteps::filterTabShouldNotBePresent);
+
+        horoLinkSteps.horoItemsShouldBeChanged(titles);
     }
 }

@@ -25,19 +25,19 @@ public class HoroLinkStepsElementSteps extends AbstractSteps {
         return horoLinkMonthElement;
     }
 
-    @Step("Проверяем, что вкладка {horoData.getName} активна в фильтре")
+    @Step("{horoData.getName} should be active")
     public void filterTabShouldBeActive(HoroData horoData) {
-        assertTrue(String.format("Вкладка фильтра %s должна быть активна", horoData.getNameWithYear(year)),
+        assertTrue(String.format("%s should be active", horoData.getNameWithYear(year)),
                 getHoroLinkElement().isFilterLinkActive(horoData));
     }
 
-    @Step("Проверяем, что вкладка {horoData.getName} не активна в фильтре")
+    @Step("{horoData.getName} shouldn't be active")
     public void filterTabShouldNotBePresent(HoroData horoData) {
-        assertTrue(String.format("Вкладка фильтра %s не должна быть активна", horoData.getNameWithYear(year)),
+        assertTrue(String.format("%s shouldn't be active", horoData.getNameWithYear(year)),
                 getHoroLinkElement().isFilterTabNotActive(horoData));
     }
 
-    @Step("Кликаем на вкладку {horoData.getName}")
+    @Step("click {horoData.getName}")
     public void clickFilterTab(HoroData horoData) {
         getHoroLinkElement().clickFilterTab(horoData);
     }
