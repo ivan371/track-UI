@@ -1,0 +1,21 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Проверяем клил по ссылке январь /moon_calendar проекта \"horo\"",
+    "children" : [ {
+      "name" : "click_january_link",
+      "uid" : "9c83a5fbb3f8da61",
+      "parentUid" : "f9313dfc2a5aca3b7616997f1dc53e1f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1524907168342,
+        "stop" : 1524907190443,
+        "duration" : 22101
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "f9313dfc2a5aca3b7616997f1dc53e1f"
+  } ]
+}

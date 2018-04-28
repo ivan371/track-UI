@@ -1,0 +1,17 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "click_january_link",
+    "uid" : "9c83a5fbb3f8da61",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1524907168342,
+      "stop" : 1524907190443,
+      "duration" : 22101
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  } ]
+}

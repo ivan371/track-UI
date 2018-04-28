@@ -1,0 +1,25 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-GM6Q430",
+    "children" : [ {
+      "name" : "13492@DESKTOP-GM6Q430.main(1)",
+      "children" : [ {
+        "name" : "click_january_link",
+        "uid" : "9c83a5fbb3f8da61",
+        "parentUid" : "5bea0d4933e37afe77d270986966010b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1524907168342,
+          "stop" : 1524907190443,
+          "duration" : 22101
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5bea0d4933e37afe77d270986966010b"
+    } ],
+    "uid" : "c64523ba64709206e121fe205441b2ec"
+  } ]
+}

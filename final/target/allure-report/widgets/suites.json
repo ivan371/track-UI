@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "f9313dfc2a5aca3b7616997f1dc53e1f",
+    "name" : "Проверяем клил по ссылке январь /moon_calendar проекта \"horo\"",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

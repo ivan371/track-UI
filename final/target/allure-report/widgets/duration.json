@@ -1,0 +1,11 @@
+[ {
+  "uid" : "9c83a5fbb3f8da61",
+  "name" : "click_january_link",
+  "time" : {
+    "start" : 1524907168342,
+    "stop" : 1524907190443,
+    "duration" : 22101
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+} ]
