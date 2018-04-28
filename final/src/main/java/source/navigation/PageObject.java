@@ -5,10 +5,6 @@ import source.tools.WaitTools;
 
 import static org.junit.Assert.assertTrue;
 
-/**
- * Навигация по страницам проекта
- * @author Pavel Balahonov <p.balahonov@corp.mail.ru>
- */
 public abstract class PageObject {
 
     private Class<?> pageClass = super.getClass();

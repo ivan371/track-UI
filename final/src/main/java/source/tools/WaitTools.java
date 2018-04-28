@@ -6,10 +6,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static java.lang.System.getProperty;
 
-/**
- * Ожидания
- * @author Pavel Balahonov <p.balahonov@corp.mail.ru>
- */
 public class WaitTools {
 
     private WebDriver driver = null;

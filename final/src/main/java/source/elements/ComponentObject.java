@@ -7,10 +7,6 @@ import source.navigation.PageObject;
 
 import static org.junit.Assert.assertTrue;
 
-/**
- * Абстрактный класс статического компонента
- * @author Pavel Balahonov <p.balahonov@corp.mail.ru>
- */
 public abstract class ComponentObject extends PageObject {
 
     public ComponentObject(WebDriver driver) {

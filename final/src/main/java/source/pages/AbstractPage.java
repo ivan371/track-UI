@@ -6,10 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import source.navigation.PageObject;
 
-/**
- * Паттерн Base Page
- * @author Pavel Balahonov <p.balahonov@corp.mail.ru>
- */
 public abstract class AbstractPage extends PageObject {
 
     public AbstractPage(WebDriver driver) {

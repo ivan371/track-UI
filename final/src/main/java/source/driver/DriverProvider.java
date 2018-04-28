@@ -4,10 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-/**
- * Инициализация драйвера
- * @author Pavel Balahonov <p.balahonov@corp.mail.ru>
- */
 public class DriverProvider {
 
     private WebDriver driver = null;
