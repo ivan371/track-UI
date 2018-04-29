@@ -15,21 +15,15 @@ public class NewsPage extends AbstractPage {
         super(driver);
     }
 
-    private String photoUrl;
-
-    public void ScrollToInstagram(ComponentObject componentObject) {
-        getJSExecutor().executeScript("arguments[0].scrollIntoView();", componentObject);
+    public void ScrollToInstagram(WebElement webElement) {
+        getJSExecutor().executeScript("arguments[0].scrollIntoView();", webElement);
     }
 
     public void SwitchToInstagram(WebElement instagramFrame) {
         getDriver().switchTo().frame(instagramFrame);
     }
 
-    public void setPhotoUrl() {
-        photoUrl = getDriver().findElement(By.tagName("img")).getAttribute("src");
-    }
-
     public String getPhotoUrl() {
-        return photoUrl;
+        return getDriver().findElement(By.xpath("//div[contains(@class, 'EmbedSidecar')]//img")).getAttribute("src");
     }
 }

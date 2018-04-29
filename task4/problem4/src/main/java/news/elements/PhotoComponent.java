@@ -7,19 +7,19 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import source.elements.Component;
 import source.elements.ComponentObject;
 
-@Component(xpath = "//iframe[contains(@class,'instagram-media')]")
-public class InstagramPostComponent extends ComponentObject {
-    public InstagramPostComponent(WebDriver driver) {
+@Component(xpath = "//div[@class='EmbedSidecar']")
+public class PhotoComponent extends ComponentObject {
+    public PhotoComponent(WebDriver driver) {
         super(driver);
     }
 
-    private final String locator = "//iframe[contains(@class,'instagram-media')]";
+    private final String locator = "//div[@class='EmbedSidecar']";
 
-    public boolean waitLoadingInstagram() {
+    public boolean isPhotoExists() {
         return waitTools.waitForCondition(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
     }
 
-    public WebElement getInstagramFrame() {
+    public WebElement getPhoto() {
         return getDriver().findElement(By.xpath(locator));
     }
 }

@@ -26,6 +26,7 @@ public class WaitTools {
     }
 
     public Object waitForAction(ExpectedCondition condition) {
-        return new WebDriverWait(driver, Long.parseLong(getProperty("webdriver.timeouts.implicitlywait"))/1000).until(condition);
+        WebDriverWait webDriverWait = new WebDriverWait(driver, Long.parseLong(getProperty("webdriver.timeouts.implicitlywait"))/1000);
+        return webDriverWait.until(condition);
     }
 }

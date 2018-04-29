@@ -11,9 +11,7 @@ public abstract class ComponentObject extends PageObject {
 
     public ComponentObject(WebDriver driver) {
         super(driver);
-    }
-
-    {
+    } {
         componentValidate();
     }
 
