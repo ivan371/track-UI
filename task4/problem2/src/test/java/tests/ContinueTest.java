@@ -54,7 +54,7 @@ public class ContinueTest {
         TimeUnit.SECONDS.sleep(1);
         items = driver.findElements(By.className("pypo-item"));
         int newCount = items.size();
-        
+
         assertEquals("Count items", 2 * count, newCount);
         buttonExistTest();
     }
