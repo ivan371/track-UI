@@ -5,7 +5,7 @@ import news.elements.InstagramPostComponent;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import source.steps.AbstractSteps;
+import news.steps.AbstractSteps;
 
 import static junit.framework.TestCase.assertTrue;
 

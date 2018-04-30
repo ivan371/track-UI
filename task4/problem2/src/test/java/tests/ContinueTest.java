@@ -1,5 +1,6 @@
 package tests;
 
+import driver.DriverProvider;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -8,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import steps.NewsSteps;
+import steps.elements.ClickButtonStepsComponent;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -16,46 +19,31 @@ import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertTrue;
 
 public class ContinueTest {
-    private WebDriver driver;
-    private WebElement button;
+    private DriverProvider driverProvider = null;
 
     @Before
-    public void init() {
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--no-sandbox");
-        chromeOptions.addArguments("--no-first-run");
-        chromeOptions.addArguments("--homepage=about:blank");
-        chromeOptions.addArguments("--ignore-certificate-errors");
-
-        driver = new ChromeDriver(chromeOptions);
+    public void initDriver() {
+        driverProvider = new DriverProvider();
     }
 
     @After
-    public void close() {
-        if(driver != null) {
-            driver.quit();
-        }
-    }
-
-    private void buttonExistTest() {
-        button = driver.findElement(By.className("js-pgng_more_link"));
-        assertTrue("Button exists", button.isDisplayed());
+    public void closeDriver() {
+        driverProvider.closeDriver();
     }
 
     @Test
     public void continueButton() throws InterruptedException {
-        driver.get("https://pets.mail.ru/news/");
-        List<WebElement> items = driver.findElements(By.className("pypo-item"));
-        int count = items.size();
-        buttonExistTest();
-        button.click();
+        NewsSteps newsSteps = new NewsSteps(driverProvider.getDriver());
+        newsSteps.open();
 
-        //we need wait to upload data
-        TimeUnit.SECONDS.sleep(1);
-        items = driver.findElements(By.className("pypo-item"));
-        int newCount = items.size();
+        // Get old titles
+        List<String> title = newsSteps.getAllArticlesTitles();
 
-        assertEquals("Count items", 2 * count, newCount);
-        buttonExistTest();
+        // Click the button
+        ClickButtonStepsComponent clickButtonStepsComponent = new ClickButtonStepsComponent(driverProvider.getDriver());
+        clickButtonStepsComponent.clickButtonShowMore();
+
+        // Check the articles list
+        newsSteps.articlesTitlesShouldBeChanged(title);
     }
 }

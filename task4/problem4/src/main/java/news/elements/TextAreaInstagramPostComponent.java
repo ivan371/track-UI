@@ -3,8 +3,6 @@ package news.elements;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import source.elements.Component;
-import source.elements.ComponentObject;
 
 @Component(xpath = "//textarea[contains(@class,'lazyembed-textarea')]")
 public class TextAreaInstagramPostComponent extends ComponentObject{

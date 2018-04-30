@@ -5,7 +5,7 @@ import news.elements.TextAreaInstagramPostComponent;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import source.steps.AbstractSteps;
+import news.steps.AbstractSteps;
 
 public class TextAreaInstagramPostStepsComponent extends AbstractSteps {
     public TextAreaInstagramPostStepsComponent(WebDriver driver) {
