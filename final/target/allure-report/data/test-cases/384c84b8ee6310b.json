@@ -1,0 +1,52 @@
+{
+  "uid" : "384c84b8ee6310b",
+  "name" : "click_january_link",
+  "fullName" : "horo.month.link.ClickJanuaryHoroLinkTest.click_january_link",
+  "historyId" : "e2a7e3c86a939ee02715f40ddfecdc7b",
+  "time" : {
+    "start" : 1525202890968,
+    "stop" : 1525202914327,
+    "duration" : 23359
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "horo.month.link"
+  }, {
+    "name" : "testClass",
+    "value" : "horo.month.link.ClickJanuaryHoroLinkTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "click_january_link"
+  }, {
+    "name" : "suite",
+    "value" : "Проверяем клил по ссылке январь /moon_calendar проекта \"horo\""
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GM6Q430"
+  }, {
+    "name" : "thread",
+    "value" : "11128@DESKTOP-GM6Q430.main(1)"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "384c84b8ee6310b.json",
+  "parameterValues" : [ ]
+}

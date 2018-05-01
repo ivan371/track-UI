@@ -1,0 +1,52 @@
+{
+  "uid" : "a4d3c8d15965236f",
+  "name" : "click_january_horo_link",
+  "fullName" : "horo.month.tab.ClickHoroTagTest.click_january_horo_link",
+  "historyId" : "8ae0a79c7c7f7af0693beda5c4ea752c",
+  "time" : {
+    "start" : 1525202809786,
+    "stop" : 1525202882195,
+    "duration" : 72409
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "horo.month.tab"
+  }, {
+    "name" : "testClass",
+    "value" : "horo.month.tab.ClickHoroTagTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "click_january_horo_link"
+  }, {
+    "name" : "suite",
+    "value" : "horo.month.tab.ClickHoroTagTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GM6Q430"
+  }, {
+    "name" : "thread",
+    "value" : "16052@DESKTOP-GM6Q430.main(1)"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a4d3c8d15965236f.json",
+  "parameterValues" : [ ]
+}

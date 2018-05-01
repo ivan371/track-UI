@@ -1,12 +1,12 @@
 {
-  "uid" : "9c83a5fbb3f8da61",
-  "name" : "click_january_link",
-  "fullName" : "horo.month.link.ClickJanuaryHoroLinkTest.click_january_link",
-  "historyId" : "e2a7e3c86a939ee02715f40ddfecdc7b",
+  "uid" : "6633b57f8671025d",
+  "name" : "horo_name_test",
+  "fullName" : "horo.numenology.name.HoroNameTest.horo_name_test",
+  "historyId" : "52508e1890e37b48e4e45946a82cb2c0",
   "time" : {
-    "start" : 1524907168342,
-    "stop" : 1524907190443,
-    "duration" : 22101
+    "start" : 1525202787417,
+    "stop" : 1525202801158,
+    "duration" : 13741
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,22 +14,22 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "package",
-    "value" : "horo.month.link"
+    "value" : "horo.numenology.name"
   }, {
     "name" : "testClass",
-    "value" : "horo.month.link.ClickJanuaryHoroLinkTest"
+    "value" : "horo.numenology.name.HoroNameTest"
   }, {
     "name" : "testMethod",
-    "value" : "click_january_link"
+    "value" : "horo_name_test"
   }, {
     "name" : "suite",
-    "value" : "Проверяем клил по ссылке январь /moon_calendar проекта \"horo\""
+    "value" : "Проверяем корректрую работу числовой вибрации имени по душе"
   }, {
     "name" : "host",
     "value" : "DESKTOP-GM6Q430"
   }, {
     "name" : "thread",
-    "value" : "13492@DESKTOP-GM6Q430.main(1)"
+    "value" : "12456@DESKTOP-GM6Q430.main(1)"
   }, {
     "name" : "severity",
     "value" : "blocker"
@@ -47,6 +47,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "9c83a5fbb3f8da61.json",
+  "source" : "6633b57f8671025d.json",
   "parameterValues" : [ ]
 }

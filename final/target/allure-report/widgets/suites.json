@@ -1,8 +1,41 @@
 {
-  "total" : 1,
+  "total" : 4,
   "items" : [ {
+    "uid" : "5b644ae9cc015078ac52dd9eae12f2e5",
+    "name" : "Проверяем корректрую работу числовой вибрации имени по душе",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "4d183af62c9d27beeee2be351f3d40fa",
+    "name" : "horo.month.tab.ClickHoroTagTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
     "uid" : "f9313dfc2a5aca3b7616997f1dc53e1f",
     "name" : "Проверяем клил по ссылке январь /moon_calendar проекта \"horo\"",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "b30c15bdf70628a54e36379dedbdf749",
+    "name" : "Check difference between titles in search results",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

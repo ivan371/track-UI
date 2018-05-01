@@ -1,0 +1,52 @@
+{
+  "uid" : "88bee3a3e0a1bf40",
+  "name" : "lady_search_titles",
+  "fullName" : "lady.search.LadySearchTitlesDifferentTest.lady_search_titles",
+  "historyId" : "9de66b50a13afbafb884aa7507c3e78",
+  "time" : {
+    "start" : 1525202933962,
+    "stop" : 1525202947454,
+    "duration" : 13492
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "lady.search"
+  }, {
+    "name" : "testClass",
+    "value" : "lady.search.LadySearchTitlesDifferentTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "lady_search_titles"
+  }, {
+    "name" : "suite",
+    "value" : "Check difference between titles in search results"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GM6Q430"
+  }, {
+    "name" : "thread",
+    "value" : "4932@DESKTOP-GM6Q430.main(1)"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "88bee3a3e0a1bf40.json",
+  "parameterValues" : [ ]
+}

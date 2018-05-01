@@ -2,20 +2,68 @@
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "name" : "suites",
   "children" : [ {
+    "name" : "Проверяем корректрую работу числовой вибрации имени по душе",
+    "children" : [ {
+      "name" : "horo_name_test",
+      "uid" : "6633b57f8671025d",
+      "parentUid" : "5b644ae9cc015078ac52dd9eae12f2e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1525202787417,
+        "stop" : 1525202801158,
+        "duration" : 13741
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "5b644ae9cc015078ac52dd9eae12f2e5"
+  }, {
+    "name" : "horo.month.tab.ClickHoroTagTest",
+    "children" : [ {
+      "name" : "click_january_horo_link",
+      "uid" : "a4d3c8d15965236f",
+      "parentUid" : "4d183af62c9d27beeee2be351f3d40fa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1525202809786,
+        "stop" : 1525202882195,
+        "duration" : 72409
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "4d183af62c9d27beeee2be351f3d40fa"
+  }, {
     "name" : "Проверяем клил по ссылке январь /moon_calendar проекта \"horo\"",
     "children" : [ {
       "name" : "click_january_link",
-      "uid" : "9c83a5fbb3f8da61",
+      "uid" : "384c84b8ee6310b",
       "parentUid" : "f9313dfc2a5aca3b7616997f1dc53e1f",
       "status" : "passed",
       "time" : {
-        "start" : 1524907168342,
-        "stop" : 1524907190443,
-        "duration" : 22101
+        "start" : 1525202890968,
+        "stop" : 1525202914327,
+        "duration" : 23359
       },
       "flaky" : false,
       "parameters" : [ ]
     } ],
     "uid" : "f9313dfc2a5aca3b7616997f1dc53e1f"
+  }, {
+    "name" : "Check difference between titles in search results",
+    "children" : [ {
+      "name" : "lady_search_titles",
+      "uid" : "88bee3a3e0a1bf40",
+      "parentUid" : "b30c15bdf70628a54e36379dedbdf749",
+      "status" : "passed",
+      "time" : {
+        "start" : 1525202933962,
+        "stop" : 1525202947454,
+        "duration" : 13492
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "b30c15bdf70628a54e36379dedbdf749"
   } ]
 }

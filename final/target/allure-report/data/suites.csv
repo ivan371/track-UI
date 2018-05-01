@@ -1,2 +1,5 @@
 "Status","Name","Duration in ms","Description"
-"passed","horo.month.link.ClickJanuaryHoroLinkTest.click_january_link","22101",""
+"passed","horo.month.link.ClickJanuaryHoroLinkTest.click_january_link","23359",""
+"passed","horo.month.tab.ClickHoroTagTest.click_january_horo_link","72409",""
+"passed","lady.search.LadySearchTitlesDifferentTest.lady_search_titles","13492",""
+"passed","horo.numenology.name.HoroNameTest.horo_name_test","13741",""
