@@ -2,50 +2,62 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "horo_name_test",
-    "uid" : "6633b57f8671025d",
+    "name" : "lady_search_input",
+    "uid" : "71ccc307d6f8cb89",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1525202787417,
-      "stop" : 1525202801158,
-      "duration" : 13741
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "click_january_horo_link",
-    "uid" : "a4d3c8d15965236f",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1525202809786,
-      "stop" : 1525202882195,
-      "duration" : 72409
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "click_january_link",
-    "uid" : "384c84b8ee6310b",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1525202890968,
-      "stop" : 1525202914327,
-      "duration" : 23359
+      "start" : 1525359611933,
+      "stop" : 1525359621283,
+      "duration" : 9350
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "lady_search_titles",
-    "uid" : "88bee3a3e0a1bf40",
+    "uid" : "1a931a8d1e23b6b8",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1525202933962,
-      "stop" : 1525202947454,
-      "duration" : 13492
+      "start" : 1525359644951,
+      "stop" : 1525359657330,
+      "duration" : 12379
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "click_january_link",
+    "uid" : "f49ef3461388793e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1525359692393,
+      "stop" : 1525359711162,
+      "duration" : 18769
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "horo_name_test",
+    "uid" : "9771acd31459010e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1525359718836,
+      "stop" : 1525359729815,
+      "duration" : 10979
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "click_january_horo_link",
+    "uid" : "f8c3fd3a76f2d9a7",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1525359752491,
+      "stop" : 1525359827031,
+      "duration" : 74540
     },
     "flaky" : false,
     "parameters" : [ ]

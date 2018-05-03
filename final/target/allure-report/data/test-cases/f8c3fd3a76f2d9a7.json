@@ -1,12 +1,12 @@
 {
-  "uid" : "a4d3c8d15965236f",
+  "uid" : "f8c3fd3a76f2d9a7",
   "name" : "click_january_horo_link",
   "fullName" : "horo.month.tab.ClickHoroTagTest.click_january_horo_link",
   "historyId" : "8ae0a79c7c7f7af0693beda5c4ea752c",
   "time" : {
-    "start" : 1525202809786,
-    "stop" : 1525202882195,
-    "duration" : 72409
+    "start" : 1525359752491,
+    "stop" : 1525359827031,
+    "duration" : 74540
   },
   "status" : "passed",
   "flaky" : false,
@@ -23,13 +23,13 @@
     "value" : "click_january_horo_link"
   }, {
     "name" : "suite",
-    "value" : "horo.month.tab.ClickHoroTagTest"
+    "value" : "Проверяем клил по тегу январь /moon_calendar проекта \"horo\""
   }, {
     "name" : "host",
     "value" : "DESKTOP-GM6Q430"
   }, {
     "name" : "thread",
-    "value" : "16052@DESKTOP-GM6Q430.main(1)"
+    "value" : "7060@DESKTOP-GM6Q430.main(1)"
   }, {
     "name" : "severity",
     "value" : "blocker"
@@ -47,6 +47,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "a4d3c8d15965236f.json",
+  "source" : "f8c3fd3a76f2d9a7.json",
   "parameterValues" : [ ]
 }

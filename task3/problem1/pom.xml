@@ -59,5 +59,17 @@
                 </configuration>
             </plugin>
         </plugins>
+        <!--<resources>-->
+            <!--<resource>-->
+                <!--<directory>-->
+                    <!--/-->
+                <!--</directory>-->
+                <!--<includes>-->
+                    <!--<include>-->
+                        <!--settings.xml-->
+                    <!--</include>-->
+                <!--</includes>-->
+            <!--</resource>-->
+        <!--</resources>-->
     </build>
 </project>

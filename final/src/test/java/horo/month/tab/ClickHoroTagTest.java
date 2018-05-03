@@ -5,14 +5,18 @@ import horo.month.tabs.steps.HoroTabSteps;
 import horo.month.tabs.steps.elements.HoroTabStepsElement;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import source.driver.DriverProvider;
 
+import java.time.LocalDate;
+import java.time.Month;
 import java.util.Arrays;
 import java.util.List;
 
+@DisplayName("Проверяем клил по тегу январь /moon_calendar проекта \"horo\"")
 public class ClickHoroTagTest {
     private DriverProvider driverProvider = null;
     private  HoroTabStepsElement horoTabStepsElement = null;
@@ -53,6 +57,7 @@ public class ClickHoroTagTest {
         // link january should be active
         horoTabStepsElement = new HoroTabStepsElement(driverProvider.getDriver());
         horoTabStepsElement.filterTabShouldBeActive(HoroMonthData.January);
+
 
         checkMonth(HoroMonthData.February);
         checkMonth(HoroMonthData.March);

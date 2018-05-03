@@ -1,12 +1,12 @@
 {
-  "uid" : "88bee3a3e0a1bf40",
-  "name" : "lady_search_titles",
-  "fullName" : "lady.search.LadySearchTitlesDifferentTest.lady_search_titles",
-  "historyId" : "9de66b50a13afbafb884aa7507c3e78",
+  "uid" : "9771acd31459010e",
+  "name" : "horo_name_test",
+  "fullName" : "horo.numenology.name.HoroNameTest.horo_name_test",
+  "historyId" : "52508e1890e37b48e4e45946a82cb2c0",
   "time" : {
-    "start" : 1525202933962,
-    "stop" : 1525202947454,
-    "duration" : 13492
+    "start" : 1525359718836,
+    "stop" : 1525359729815,
+    "duration" : 10979
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,22 +14,22 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "package",
-    "value" : "lady.search"
+    "value" : "horo.numenology.name"
   }, {
     "name" : "testClass",
-    "value" : "lady.search.LadySearchTitlesDifferentTest"
+    "value" : "horo.numenology.name.HoroNameTest"
   }, {
     "name" : "testMethod",
-    "value" : "lady_search_titles"
+    "value" : "horo_name_test"
   }, {
     "name" : "suite",
-    "value" : "Check difference between titles in search results"
+    "value" : "Проверяем корректрую работу числовой вибрации имени по душе"
   }, {
     "name" : "host",
     "value" : "DESKTOP-GM6Q430"
   }, {
     "name" : "thread",
-    "value" : "4932@DESKTOP-GM6Q430.main(1)"
+    "value" : "8316@DESKTOP-GM6Q430.main(1)"
   }, {
     "name" : "severity",
     "value" : "blocker"
@@ -47,6 +47,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "88bee3a3e0a1bf40.json",
+  "source" : "9771acd31459010e.json",
   "parameterValues" : [ ]
 }

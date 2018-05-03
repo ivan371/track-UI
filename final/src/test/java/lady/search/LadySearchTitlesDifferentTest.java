@@ -3,15 +3,12 @@ package lady.search;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.junit4.DisplayName;
-import lady.search.pages.elements.LadySearchInputStepsElement;
+import lady.search.steps.elements.LadySearchInputStepsElement;
 import lady.search.steps.LadySearchSteps;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import source.driver.DriverProvider;
-
-import java.util.Arrays;
-import java.util.List;
 
 @DisplayName("Check difference between titles in search results")
 public class LadySearchTitlesDifferentTest {

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: lady.search.LadySearchTitlesDifferentTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.974 s - in lady.search.LadySearchTitlesDifferentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.231 s - in lady.search.LadySearchTitlesDifferentTest

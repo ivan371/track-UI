@@ -2,68 +2,84 @@
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "name" : "suites",
   "children" : [ {
-    "name" : "Проверяем корректрую работу числовой вибрации имени по душе",
+    "name" : "Check input form",
     "children" : [ {
-      "name" : "horo_name_test",
-      "uid" : "6633b57f8671025d",
-      "parentUid" : "5b644ae9cc015078ac52dd9eae12f2e5",
+      "name" : "lady_search_input",
+      "uid" : "71ccc307d6f8cb89",
+      "parentUid" : "a511812e3446ca7ddf66df039f0203ce",
       "status" : "passed",
       "time" : {
-        "start" : 1525202787417,
-        "stop" : 1525202801158,
-        "duration" : 13741
+        "start" : 1525359611933,
+        "stop" : 1525359621283,
+        "duration" : 9350
       },
       "flaky" : false,
       "parameters" : [ ]
     } ],
-    "uid" : "5b644ae9cc015078ac52dd9eae12f2e5"
+    "uid" : "a511812e3446ca7ddf66df039f0203ce"
   }, {
-    "name" : "horo.month.tab.ClickHoroTagTest",
+    "name" : "Check difference between titles in search results",
     "children" : [ {
-      "name" : "click_january_horo_link",
-      "uid" : "a4d3c8d15965236f",
-      "parentUid" : "4d183af62c9d27beeee2be351f3d40fa",
+      "name" : "lady_search_titles",
+      "uid" : "1a931a8d1e23b6b8",
+      "parentUid" : "b30c15bdf70628a54e36379dedbdf749",
       "status" : "passed",
       "time" : {
-        "start" : 1525202809786,
-        "stop" : 1525202882195,
-        "duration" : 72409
+        "start" : 1525359644951,
+        "stop" : 1525359657330,
+        "duration" : 12379
       },
       "flaky" : false,
       "parameters" : [ ]
     } ],
-    "uid" : "4d183af62c9d27beeee2be351f3d40fa"
+    "uid" : "b30c15bdf70628a54e36379dedbdf749"
   }, {
     "name" : "Проверяем клил по ссылке январь /moon_calendar проекта \"horo\"",
     "children" : [ {
       "name" : "click_january_link",
-      "uid" : "384c84b8ee6310b",
+      "uid" : "f49ef3461388793e",
       "parentUid" : "f9313dfc2a5aca3b7616997f1dc53e1f",
       "status" : "passed",
       "time" : {
-        "start" : 1525202890968,
-        "stop" : 1525202914327,
-        "duration" : 23359
+        "start" : 1525359692393,
+        "stop" : 1525359711162,
+        "duration" : 18769
       },
       "flaky" : false,
       "parameters" : [ ]
     } ],
     "uid" : "f9313dfc2a5aca3b7616997f1dc53e1f"
   }, {
-    "name" : "Check difference between titles in search results",
+    "name" : "Проверяем корректрую работу числовой вибрации имени по душе",
     "children" : [ {
-      "name" : "lady_search_titles",
-      "uid" : "88bee3a3e0a1bf40",
-      "parentUid" : "b30c15bdf70628a54e36379dedbdf749",
+      "name" : "horo_name_test",
+      "uid" : "9771acd31459010e",
+      "parentUid" : "5b644ae9cc015078ac52dd9eae12f2e5",
       "status" : "passed",
       "time" : {
-        "start" : 1525202933962,
-        "stop" : 1525202947454,
-        "duration" : 13492
+        "start" : 1525359718836,
+        "stop" : 1525359729815,
+        "duration" : 10979
       },
       "flaky" : false,
       "parameters" : [ ]
     } ],
-    "uid" : "b30c15bdf70628a54e36379dedbdf749"
+    "uid" : "5b644ae9cc015078ac52dd9eae12f2e5"
+  }, {
+    "name" : "Проверяем клил по тегу январь /moon_calendar проекта \"horo\"",
+    "children" : [ {
+      "name" : "click_january_horo_link",
+      "uid" : "f8c3fd3a76f2d9a7",
+      "parentUid" : "e469cf44d949b780eec1e16a8f90aedf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1525359752491,
+        "stop" : 1525359827031,
+        "duration" : 74540
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e469cf44d949b780eec1e16a8f90aedf"
   } ]
 }

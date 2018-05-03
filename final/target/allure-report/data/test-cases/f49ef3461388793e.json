@@ -1,12 +1,12 @@
 {
-  "uid" : "384c84b8ee6310b",
+  "uid" : "f49ef3461388793e",
   "name" : "click_january_link",
   "fullName" : "horo.month.link.ClickJanuaryHoroLinkTest.click_january_link",
   "historyId" : "e2a7e3c86a939ee02715f40ddfecdc7b",
   "time" : {
-    "start" : 1525202890968,
-    "stop" : 1525202914327,
-    "duration" : 23359
+    "start" : 1525359692393,
+    "stop" : 1525359711162,
+    "duration" : 18769
   },
   "status" : "passed",
   "flaky" : false,
@@ -29,7 +29,7 @@
     "value" : "DESKTOP-GM6Q430"
   }, {
     "name" : "thread",
-    "value" : "11128@DESKTOP-GM6Q430.main(1)"
+    "value" : "7848@DESKTOP-GM6Q430.main(1)"
   }, {
     "name" : "severity",
     "value" : "blocker"
@@ -47,6 +47,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "384c84b8ee6310b.json",
+  "source" : "f49ef3461388793e.json",
   "parameterValues" : [ ]
 }
